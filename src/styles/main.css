@@ -1,0 +1,88 @@
+@import '~reveal.js/dist/reveal.css';
+@import '~reveal.js/dist/theme/simple.css';
+@import "~@mozilla-protocol/core/protocol/css/protocol.css";
+@import "~@mozilla-protocol/core/protocol/css/protocol-extra.css";
+
+body {
+    transition: background-color 2s;
+}
+
+.reveal {
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+}
+
+h1, h2 {
+    font-weight: 700 !important;
+}
+
+.first .container {
+    display: flex;
+    align-items: center;
+}
+
+.first .logo {
+    max-width: 35%;
+    max-height: 35%;
+    flex-grow:0;
+    flex-shrink:0;
+}
+
+.first h3 {
+    display: flex;
+    text-align: left;
+}
+
+.alt-bg {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.alt-bg h1, .alt-bg h2, .alt-bg h3, .alt-bg h4, .alt-bg h5, .alt-bg h6, .alt-bg .reveal p {
+    color: #ffffff;
+}
+
+.imgBg p {
+    text-align: right;
+}
+
+.alt-bg .imgBg .slide-background-content {
+    animation: animatedBackground 10s linear forwards;
+    -moz-animation: animatedBackground 10s linear forwards;
+    -webkit-animation: animatedBackground 10s linear forwards;
+    -ms-animation: animatedBackground 10s linear forwards;
+    -o-animation: animatedBackground 10s linear forwards;
+}
+
+.values strong {
+    color: #fff44f;
+}
+
+.reveal .controls button, .reveal .progress {
+    color: #00458b;
+}
+
+.reveal iframe, .reveal img, .reveal video {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+@keyframes animatedBackground {
+    0% { background-position: center top; }
+    100% { background-position: center bottom; }
+}
+@-moz-keyframes animatedBackground {
+    0% { background-position: center top; }
+    100% { background-position: center bottom; }
+}
+@-webkit-keyframes animatedBackground {
+    0% { background-position: center top; }
+    100% { background-position: center bottom; }
+}
+@-ms-keyframes animatedBackground {
+    0% { background-position: center top; }
+    100% { background-position: center bottom; }
+}
+@-o-keyframes animatedBackground {
+    0% { background-position: center top; }
+    100% { background-position: center bottom; }
+}

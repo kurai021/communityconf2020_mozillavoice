@@ -1,0 +1,34 @@
+{
+  "name": "mozillavoice_communityconf2020",
+  "version": "0.0.1",
+  "description": "Conferencia para el Community Conf 2020",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "mozilla",
+    "mozillavoice",
+    "communityconf2020"
+  ],
+  "author": "Richard Armuelles",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-inline-source-plugin": "^1.0.0-beta.2",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@mozilla-protocol/core": "^12.1.0",
+    "reveal.js": "^4.0.2"
+  }
+}
