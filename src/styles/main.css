@@ -7,7 +7,7 @@ body {
     transition: background-color 2s;
 }
 
-.reveal {
+.reveal, .reveal h5 {
     font-family: Inter, X-LocaleSpecific, sans-serif;
 }
 
@@ -27,9 +27,28 @@ h1, h2 {
     flex-shrink:0;
 }
 
+.first .social .logo{
+    max-width: 95%;
+    max-height: 95%;
+    margin-left: 65%;
+    margin-right: 10px;
+    width: 3rem;
+    flex: 2;
+}
+
+.first .social .usernames {
+    flex: 10;
+}
+
 .first h3 {
     display: flex;
     text-align: left;
+}
+
+.first h5 {
+    display: flex;
+    text-align: right;
+    line-height: 0.8;
 }
 
 .alt-bg {
